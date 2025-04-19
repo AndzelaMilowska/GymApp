@@ -1,0 +1,1 @@
+export const ICONS_SIZE = '1.5rem'
