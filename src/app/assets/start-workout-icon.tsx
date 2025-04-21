@@ -1,5 +1,5 @@
 export default function StartWorkoutIcon(props: any) {
-  const { fill } = props;
+  const {className, fill } = props;
   let width 
   if (props.width) {
     const letr = props.width.match(/[a-zA-Z]+/g);
@@ -12,6 +12,7 @@ export default function StartWorkoutIcon(props: any) {
 
   return (
     <svg
+    className={className}
       width={width}
       viewBox="0 0 69 57"
       fill="none"
