@@ -1,5 +1,12 @@
 export default function StartWorkoutIcon(props: any) {
-  const { width, fill } = props;
+  const { fill } = props;
+  let width 
+  if (props.width) {
+    const letr = props.width.match(/[a-zA-Z]+/g);
+    let num = props.width.replace(/[a-zA-Z]+/g, '') * 1.43  
+    width = `${num}${letr}`;
+  }
+
   const strokeWidthPrimary = "2";
   const strokeWidthSecondary = "3.5";
 
@@ -11,13 +18,13 @@ export default function StartWorkoutIcon(props: any) {
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M39 52.5L57 40"
-        stroke="black"
+        stroke={fill ? fill : "currentColor"}
         strokeWidth={strokeWidthPrimary}
         strokeLinecap="round"
       />
       <path
         d="M46 52.5L56 45.5"
-        stroke="black"
+        stroke={fill ? fill : "currentColor"}
         strokeWidth={strokeWidthPrimary}
         strokeLinecap="round"
       />
