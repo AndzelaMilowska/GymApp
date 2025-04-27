@@ -1,6 +1,5 @@
 import React from "react";
 import StreakIcon from "../assets/streak-icon";
-import StartWorkoutIcon from "../assets/start-workout-icon";
 
 export default function StreakBar() {
   const streakCounter = 48;
@@ -18,8 +17,7 @@ export default function StreakBar() {
         </div>
       </div>
 
-      <button className="bg-primary-dark text-primary rounded-full px-3 py-1 m-2 flex flex-row justify-items align-center items-center border-primary-dark border-1 hover:text-primary-dark hover:bg-secondary hover:cursor-pointer">
-        {/* <StartWorkoutIcon width="1.5em" className="mx-1" /> */}
+      <button className="bg-primary-dark text-primary rounded-full px-3 py-1 m-2 flex flex-row justify-items align-center items-center border-primary-dark border-1 duration-200 hover:text-primary-dark hover:bg-secondary hover:cursor-pointer">
         <i className="fa-solid fa-play text-2xl mx-1" ></i>
         <span className="px-1 flex items-center">START WORKOUT</span>
       </button>
