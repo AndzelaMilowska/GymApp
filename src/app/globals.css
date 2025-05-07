@@ -29,10 +29,11 @@
 
 @theme {
   --color-primary-dark: var(--primary-brown);
-  --color-primary-white: var(--white);
+  --color-primary-white: var(--white-01);
   --color-primary: var(--primary-olive);
   --color-secondary: var(--secondary-olive);
   --color-tertiary: var(--primary-grey);
+  --breakpoint-xs: 28rem;
 }
 
 @media (prefers-color-scheme: dark) {
