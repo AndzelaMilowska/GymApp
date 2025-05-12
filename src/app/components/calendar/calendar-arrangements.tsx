@@ -17,7 +17,7 @@ export function dateCellStyleConditioner(
 ) {
   //second argument is checkIsEventForTheDay result
 
-  let dateCellStyles: string = " hover:cursor-pointer hover:text-tertiary";
+  let dateCellStyles: string = " hover:cursor-pointer hover:text-secondary-dark";
   const today = new Date();
   if (
     date.getDate() === today.getDate() &&

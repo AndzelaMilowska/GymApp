@@ -16,7 +16,8 @@
   --primary-olive: #F1F2ED;
   --secondary-olive: #DFE2E1;
   --primary-grey: #CCCFC9;
-  --primary-brown: #5A3A39;
+  --primary-brown: #5a3a39;
+  --secondary-brown:  #a59491;
 }
 
 @theme inline {
@@ -29,6 +30,7 @@
 
 @theme {
   --color-primary-dark: var(--primary-brown);
+  --color-secondary-dark: var(--secondary-brown);
   --color-primary-white: var(--white-01);
   --color-primary: var(--primary-olive);
   --color-secondary: var(--secondary-olive);

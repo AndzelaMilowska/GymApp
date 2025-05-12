@@ -5,8 +5,8 @@ export default function StreakBar() {
   const streakCounter = 48;
   const streakText = "It's the longest streak of all time! Keep going!";
   return (
-    <div className="flex bg-primary rounded-2xl m-5 justify-between flex-col sm:flex-row items-center">
-      <div className="flex justify-center items-center px-4 text-primary-dark">
+    <div className="flex bg-primary-dark rounded-2xl m-5 justify-between flex-col sm:flex-row items-center">
+      <div className="flex justify-center items-center px-4 text-primary">
         <StreakIcon width="2.5em" className="m-1" />
         <div className="my-2">
           <h1 className=" text-2xl font-extrabold leading-none flex items-end ">
@@ -17,9 +17,16 @@ export default function StreakBar() {
         </div>
       </div>
 
-      <button className="bg-primary-dark sm:max-w-[12em] text-primary rounded-full px-3 py-2 sm:py-1 m-2 mx-4 flex flex-row justify-items align-center items-center border-primary-dark border-1 duration-200 hover:text-primary-dark hover:bg-secondary hover:cursor-pointer">
+      <button className={
+        ` 
+        hover:text-primary text-primary-dark 
+        flex flex-row justify-items align-center items-center
+        hover:bg-secondary-dark bg-secondary
+        rounded-full border-1 hover:border-primary-white
+        px-3 py-2 sm:py-1 m-2 mx-4
+        sm:max-w-[12em]     duration-200   hover:cursor-pointer`}>
         <i className="fa-solid fa-play text-2xl ml-2" ></i>
-        <span className="px-1 flex items-center mx-2">START WORKOUT</span>
+        <span className="flex items-center ">START WORKOUT</span>
       </button>
     </div>
   );
