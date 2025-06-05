@@ -25,7 +25,7 @@ export default function StreakBar() {
         rounded-full border-1 hover:border-primary-white
         px-3 py-2 sm:py-1 m-2 mx-4
         sm:max-w-[12em]     duration-200   hover:cursor-pointer`}>
-        <i className="fa-solid fa-play text-2xl ml-2" ></i>
+        <i className="fa-solid fa-play text-2xl ml-2 pr-2" />
         <span className="flex items-center ">START WORKOUT</span>
       </button>
     </div>

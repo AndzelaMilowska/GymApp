@@ -4,14 +4,12 @@ import WorkoutsIcon from "@/app/assets/workouts-icon";
 import { exampleGoalsArray } from "@/app/constants";
 import Calendar from "../calendar/calendar";
 import Container from "../container";
-import { NavigationBar } from "../navigation-bar";
 import ProgressionBar from "../progression-bar";
 import SquareButton from "../square-button";
-import StreakBar from "../streak-bar";
 
 export default function DefaultView() {
   const squareButtonStyleClasses: string =
-    "bg-primary-dark text-primary rounded-2xl p-2 border-primary-dark border-1 duration-200 hover:border-primary-white hover:bg-secondary-dark";
+    "bg-primary-dark text-primary rounded-2xl p-2 border-primary-dark border-1 duration-200 hover:translate-y-[-2px] hover:shadow-[5px_5px_3px_0px_#bdc1ba]";
 
   return (
     <div className="flex m-5 justify-center flex-col-reverse sm:flex-row space-x-6">

@@ -1,5 +1,5 @@
 import React from "react";
-import GoalBar from "../goal-bar";
+import GoalPreview from "../goal-preview";
 import { exampleGoalsArray } from "@/app/constants";
 
 export default function GoalsView(props: any) {
@@ -18,12 +18,12 @@ export default function GoalsView(props: any) {
       </div>
 
       <div className=" flex flex-col overflow-scroll p-3 bg-primary-white w-full rounded-2xl ">
-        <button className="flex flex-row items-center bg-primary text-tertiary rounded-2xl py-2 px-3 w-max ml-auto hover:bg-primary-dark hover:text-secondary hover:cursor-pointer duration-300">
+        <button className="flex flex-row items-center rounded-2xl py-2 px-3 w-max ml-auto bg-primary-dark text-primary-white hover:cursor-pointer duration-200 hover:translate-y-[-2px] hover:shadow-[5px_5px_3px_0px_#bdc1ba]">
           <i className="fa-solid fa-circle-plus pr-1 "/>
           ADD NEW
         </button>
         {exampleGoalsArray.map((goal, index) => (
-          <GoalBar goalData={goal} key={index} />
+          <GoalPreview goalData={goal} key={index} isUpdateButton={true}/>
         ))}
       </div>
     </div>
